@@ -1,0 +1,45 @@
+/* Adjustments for mobile screens */
+
+/* Reduce padding and font sizes */
+.chat-container {
+    padding: 10px;
+}
+.chat-header {
+    padding: 10px;
+}
+.chat-message-list {
+    padding: 10px;
+    border: 1px solid #ddd; /* Add border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.chat-input {
+    padding: 10px;
+    border: 1px solid #ddd; /* Add border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.chat-input input {
+    padding: 8px;
+}
+.chat-input button {
+    padding: 8px 16px;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    .chat-container {
+        height: auto; /* Allow container to grow as needed */
+    }
+    .chat-header, .chat-message-list, .chat-input {
+        margin-bottom: 10px;
+    }
+    .chat-message-image {
+        width: 40px;
+        height: 40px;
+    }
+    .chat-input input {
+        padding: 6px;
+    }
+    .chat-input button {
+        padding: 6px 12px;
+    }
+}
